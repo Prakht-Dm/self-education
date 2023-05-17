@@ -9,12 +9,9 @@ export const AppRouter = () => {
         <Suspense fallback={<div>Loading...</div>}>
             <Routes>
                 {
-                    routerConfig.map(({path, element}) => {
-                        <Route key={path} path={path} element={element}>{element}</Route>
-                    })
-                }
-                <Route path={'/about'} element={<AboutPage/>} />
-                <Route path={'/'} element={<MainPage />} />
+                    routerConfig.map(({path, element}) => (
+                        <Route key={path} path={path} element={element} />
+                    ))}
             </Routes>
         </Suspense>
     );
