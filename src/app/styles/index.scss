@@ -1,7 +1,7 @@
-@import "variables/global";
-@import "themes/dark";
-@import "themes/normal";
-@import "reset";
+@import "src/app/styles/variables/global";
+@import "src/app/styles/themes/dark";
+@import "src/app/styles/themes/normal";
+@import "src/app/styles/reset";
 
 * {
     margin: 0;
