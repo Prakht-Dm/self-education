@@ -1,0 +1,15 @@
+.Sidebar{
+  width: 300px;
+  height: calc(100vh - var(--navbar-height));
+
+  background: var(--inverted-bg-color);
+  //flex-grow: 1;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collapsed {
+  width: 80px
+}

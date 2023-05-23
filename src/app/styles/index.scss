@@ -1,7 +1,7 @@
-@import "src/app/styles/variables/global";
-@import "src/app/styles/themes/dark";
-@import "src/app/styles/themes/normal";
-@import "src/app/styles/reset";
+@import "variables/global";
+@import "themes/dark";
+@import "themes/normal";
+@import "reset";
 
 * {
     margin: 0;
@@ -16,4 +16,13 @@
     color: var(--primaruy-color);
 
     min-height: 100vh
+}
+
+.content-page {
+    display: flex;
+
+
+    >:last-child {
+        padding: 20px;
+    }
 }
